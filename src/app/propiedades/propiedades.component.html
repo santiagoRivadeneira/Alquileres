@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+      <div class="d-flex flex-row " style="background-color: rgb(255, 217, 0); ">
+  
+          <div *ngFor="let propiedad of propiedades" >
+      
+              <div class="card d-flex my-5 flex-wrap" style="width: 18rem; margin-left: 10rem; border: 0.5px solid black;">
+                
+                <img class="card-img-top" src="assets/s.jpg" alt="Card image cap" style="height: 300px; border: 1px solid black;">
+      
+                <div class="card-body ">
+                  <p class="p-1"> tipo propiedad: {{propiedad.tipo_prop}}</p>
+                  <p class="p-1">Expensas: {{propiedad.expensas}}</p>
+                  <p class="p-1">Precio: {{propiedad.precio}}$</p>
+                </div>
+                
+              </div>
+          </div>
+      
+        </div>
+      
+  </body>
+  </html>
+
+</body>
+</html>
+
+
+
+
+<script>
+/*
+<div  class="d-flex flex-column" *ngFor="let propiedad of propiedades">
+        <div>
+
+
+
+                <div class="produto">
+                    <img src="images/Novidades/Novidade1.jpg" alt="" class="produto__img">
+                  <div class="productDescription">
+                    <h3 class="produto__title"> {{propiedad.id_prop}}</h3>
+                    <spam class="produto__price">$90.00</spam>
+                  </div>
+                  <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
+                </div>.
+          
+
+                <p class="p-1">{{propiedad.direccion}}</p>
+                <p class="p-1">{{propiedad.localidad}}</p>
+                <p class="p-1">{{propiedad.numDireccion}}</p>
+                <p class="p-1">{{propiedad.ubicacion}}</p>
+  
+        </div>
+    </div>
+    */
+</script>

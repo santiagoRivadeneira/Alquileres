@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Propiedad</title>
+</head>
+<body>
+    <form  [formGroup]="formulario" (ngSubmit)="onSubmit()"> 
+        <div class="container" >
+            <div class="d-flex justify-content-center mt-5">
+                <div class="mt-5" >
+                    <h4>Registrarse</h4>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">tipo_prop</label>
+                        <input 
+                            formControlName="tipo_prop"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput" 
+                            placeholder="Tipo Propiedad"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">expensas</label>
+                        <input 
+                        formControlName="expensas"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput2" 
+                            placeholder="expensas"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">precio</label>
+                        <input 
+                        formControlName="precio"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput" 
+                            placeholder="Ingrese Correo"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">direccion</label>
+                        <input 
+                        formControlName="direccion"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput" 
+                            placeholder="direccion"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">localidad</label>
+                        <input 
+                        formControlName="localidad"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput" 
+                            placeholder="localidad"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">numDireccion</label>
+                        <input 
+                        formControlName="numDireccion"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput" 
+                            placeholder="numDireccion"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">ubicacion</label>
+                        <input 
+                        formControlName="ubicacion"
+                            type="text" 
+                            class="form-control" 
+                            id="formGroupExampleInput" 
+                            placeholder="ubicacion"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">imagen</label>
+                        <input 
+                        formControlName="imagen"
+                            type="file" 
+                            class="form-control" 
+                            id="formGroupExampleInput"    
+                        />
+                    </div>
+                        <button type="submit" class="btn btn-primary mt-3 justify-content-center">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="d-flex justify-content-center mt-5">
+            <div class="mt-5" >
+                <h4>Registrarse</h4>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Email</label>
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        id="formGroupExampleInput" 
+                        placeholder="Ingrese Correo"
+                        [(ngModel)]="email"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Contraseña</label>
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        id="formGroupExampleInput2" 
+                        placeholder="Ingrese Contraseña"
+                        [(ngModel)]="pass"
+                    />
+                </div>
+
+
+                <div *ngIf="validaciones(pass)">
+                    <div class="alert alert-danger" *ngIf="caracteresMaximos !== '' "  role="alert">
+                        <p>{{caracteresMaximos}}</p>
+                    </div>
+                </div>
+
+                    <input type="button" class="btn btn-primary mt-3 justify-content-center" (click)="SignUp()" value=" Registrarse">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+</body>
+</html>
